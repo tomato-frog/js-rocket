@@ -1,3 +1,7 @@
+body{
+    font-family: 'verdana'
+}
+
 .left{
     background-color: #b3b3ff;
     position: fixed;
@@ -5,6 +9,26 @@
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.interface{
+    text-align: center;
+    padding: 20px;
+}
+
+a.button{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: color 300ms;
+}
+
+a:hover{
+    color: red;
 }
 
 .right{
@@ -29,16 +53,33 @@
     position: absolute;
     left: 50%;
     bottom: 20px;
-    width: 20px;
-    height: 100px;
-    background-color: blue;
+    width: 140px;
+    height: 115px;
+    margin-left: -50px;
+    background: url('../img/Stage1.png') no-repeat 0 0;
     transition: bottom 10000ms;
+}
+
+/* rocket bg image */
+body.body-state2 .rocket{
+    background-image: url('../img/Stage2.png');
+    width: 140px;
+    height: 120px;
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+    background-image: url('../img/Stage3.png');
+    width: 140px;
+    height: 130px;
+}
+body.body-state5 .rocket{
+    background-image: url('../img/Boom.png');
 }
 
 body.body-state1 .rocket{
     transition: none;
-
 }
+
 
 body.body-state3 .rocket,
 body.body-state4 .rocket{
