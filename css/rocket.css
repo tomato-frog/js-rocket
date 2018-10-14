@@ -57,7 +57,7 @@ a:hover{
     height: 115px;
     margin-left: -50px;
     background: url('../img/Stage1.png') no-repeat 0 0;
-    transition: bottom 10000ms;
+    transition: bottom 10000ms cubic-bezier(1, 0.03, 1, 1);
 }
 
 /* rocket bg image */
